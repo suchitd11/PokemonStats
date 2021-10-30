@@ -1,38 +1,57 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TitleSection{
+  background-color: #5DB9FF;
+  width:100%;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.TitleSection input{
+  width: 200px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid #4caBee;
+  font-size: 18px;
+  padding-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TitleSection button{
+  width: 175px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 18px;
+  padding-left: 10px;
+  background-color: #13649e;
+  color: white;
+  border: none;
+  margin: 20px;
+}
+
+.TitleSection button:hover{
+  cursor: pointer;
+}
+
+.DisplaySection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DisplaySection h4{
+  margin: 10px;
+}
+
+.DisplaySection img{
+  width: 150px;
 }
